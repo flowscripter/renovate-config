@@ -1,0 +1,52 @@
+{
+    "name": "@flowscripter/renovate-config",
+    "version": "0.0.0",
+    "description": "Common Renovate config for all Flowscripter projects.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/flowscripter/renovate-config"
+    },
+    "homepage": "https://github.com/flowscripter/renovate-config",
+    "bugs": {
+        "url": "https://github.com/flowscripter/renovate-config/issues"
+    },
+    "keywords": [
+        "renovate"
+    ],
+    "contributors": [
+        {
+            "name": "Vectronic",
+            "email": "hello.vectronic@gmail.com",
+            "url": "https://vectronic.io"
+        }
+    ],
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^8.1.0",
+        "@commitlint/config-conventional": "8.0.0",
+        "husky": "3.0.0",
+        "semantic-release": "^15.13.19"
+    },
+    "peerDependencies": {},
+    "dependencies": {},
+    "renovate-config": {
+        "packageRules": [
+            {
+                "depTypeList": [
+                    "devDependencies"
+                ],
+                "groupName": "devDependencies"
+            }
+        ],
+        "default": {
+            "extends": [
+                "config:base",
+                "default:automergePatch",
+                "default:automergeMinor"
+            ]
+        }
+    }
+}
