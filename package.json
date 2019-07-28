@@ -33,6 +33,11 @@
     "peerDependencies": {},
     "dependencies": {},
     "renovate-config": {
+        "extends": [
+            "config:base",
+            "default:automergePatch",
+            "default:automergeMinor"
+        ],
         "packageRules": [
             {
                 "depTypeList": [
@@ -40,13 +45,6 @@
                 ],
                 "groupName": "devDependencies"
             }
-        ],
-        "default": {
-            "extends": [
-                "config:base",
-                "default:automergePatch",
-                "default:automergeMinor"
-            ]
-        }
+        ]
     }
 }
