@@ -20,4 +20,4 @@ Add `"extends": "@flowscripter"` to your `renovate.json` file.
 
 ## License
 
-MIT © Vectronic
+MIT © Flowscripter
